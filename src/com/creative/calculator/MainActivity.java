@@ -56,6 +56,7 @@ public class MainActivity extends Activity implements OnClickListener {
 				break;
 			case R.id.btnDivision:
 				result = operand1 / operand2;
+				result = (double) Math.round(result*10000)/10000;
 				break;
 
 			default:
